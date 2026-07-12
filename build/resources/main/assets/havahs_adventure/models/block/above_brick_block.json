@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "havahs_adventure:block/above_brick_block",
+    "up": "havahs_adventure:block/above_brick_block",
+    "north": "havahs_adventure:block/above_brick_block",
+    "east": "havahs_adventure:block/above_brick_block",
+    "south": "havahs_adventure:block/above_brick_block",
+    "west": "havahs_adventure:block/above_brick_block",
+    "particle": "havahs_adventure:block/above_brick_block"
+  },
+  "render_type": "solid"
+}

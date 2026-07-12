@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "id": "havahs_adventure:soft_above_block"
+    },
+    "title": {
+      "translate": "advancements.above_the_world.title"
+    },
+    "description": {
+      "translate": "advancements.above_the_world.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "above_the_world_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "havahs_adventure:above"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

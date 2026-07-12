@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "havahs_adventure:blocks/soft_above_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "havahs_adventure:soft_above_block"
+        }
+      ]
+    }
+  ]
+}

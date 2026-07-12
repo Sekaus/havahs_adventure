@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": {
+        "type": "minecraft:ore",
+        "config": {
+          "size": 64,
+          "discard_chance_on_air_exposure": 0,
+          "targets": [
+            {
+              "target": {
+                "predicate_type": "tag_match",
+                "tag": "minecraft:air"
+              },
+              "state": {
+                "Name": "havahs_adventure:soft_above_block"
+              }
+            }
+          ]
+        }
+      },
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "minecraft:ore",
+            "config": {
+              "size": 32,
+              "discard_chance_on_air_exposure": 0,
+              "targets": [
+                {
+                  "target": {
+                    "predicate_type": "tag_match",
+                    "tag": "minecraft:air"
+                  },
+                  "state": {
+                    "Name": "havahs_adventure:soft_above_block"
+                  }
+                }
+              ]
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "minecraft:ore",
+            "config": {
+              "size": 16,
+              "discard_chance_on_air_exposure": 0,
+              "targets": [
+                {
+                  "target": {
+                    "predicate_type": "tag_match",
+                    "tag": "minecraft:air"
+                  },
+                  "state": {
+                    "Name": "havahs_adventure:soft_above_block"
+                  }
+                }
+              ]
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "minecraft:ore",
+            "config": {
+              "size": 16,
+              "discard_chance_on_air_exposure": 0.5,
+              "targets": [
+                {
+                  "target": {
+                    "predicate_type": "tag_match",
+                    "tag": "minecraft:air"
+                  },
+                  "state": {
+                    "Name": "havahs_adventure:soft_above_block"
+                  }
+                }
+              ]
+            }
+          },
+          "placement": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "havahs_adventure:block/above_dirt",
+    "top": "havahs_adventure:block/above_grass_block_top",
+    "side": "havahs_adventure:block/above_grass_block_side",
+    "overlay": "havahs_adventure:block/above_grass_block_side",
+    "particle": "havahs_adventure:block/above_dirt"
+  },
+  "render_type": "cutout_mipped"
+}

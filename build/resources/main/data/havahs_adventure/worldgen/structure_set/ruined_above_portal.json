@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "havahs_adventure:ruined_above_portal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1000,
+    "separation": 999,
+    "salt": 1434323890
+  }
+}

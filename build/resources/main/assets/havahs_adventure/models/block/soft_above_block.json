@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "havahs_adventure:block/above_block",
+    "particle": "havahs_adventure:block/above_block"
+  },
+  "render_type": "translucent"
+}

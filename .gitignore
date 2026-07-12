@@ -18,4 +18,5 @@ gradle/*
 .gradle/*
 run/*
 build/*
+!build/resources
 .eclipse/*

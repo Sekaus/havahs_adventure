@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "d e"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "b": {
+      "item": "minecraft:nether_star"
+    },
+    "c": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "d": {
+      "item": "minecraft:echo_shard"
+    },
+    "e": {
+      "item": "havahs_adventure:light_crystal"
+    }
+  },
+  "result": {
+    "id": "havahs_adventure:finel_key",
+    "count": 1
+  }
+}

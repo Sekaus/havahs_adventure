@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "havahs_adventure:above_brick_stair_block",
+    "havahs_adventure:above_brick_slab_block",
+    "havahs_adventure:above_brick_block",
+    "havahs_adventure:above_block",
+    "havahs_adventure:light_crystal_block"
+  ]
+}

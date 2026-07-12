@@ -1,0 +1,62 @@
+{
+  "feature": "havahs_adventure:above_clouds",
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 2,
+      "noise_factor": 200
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "uniform",
+        "min_inclusive": 4,
+        "max_inclusive": 8
+      }
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 32
+              }
+            },
+            "weight": 1
+          },
+          {
+            "data": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 76
+              }
+            },
+            "weight": 1
+          },
+          {
+            "data": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 108
+              }
+            },
+            "weight": 1
+          },
+          {
+            "data": {
+              "type": "minecraft:constant",
+              "value": {
+                "absolute": 140
+              }
+            },
+            "weight": 1
+          }
+        ]
+      }
+    }
+  ]
+}

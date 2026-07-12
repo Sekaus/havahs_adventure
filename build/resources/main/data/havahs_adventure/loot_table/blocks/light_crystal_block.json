@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "havahs_adventure:blocks/light_crystal_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "havahs_adventure:light_crystal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

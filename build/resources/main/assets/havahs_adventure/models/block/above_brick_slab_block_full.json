@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "havahs_adventure:block/above_brick_block",
+    "bottom": "havahs_adventure:block/above_brick_block",
+    "top": "havahs_adventure:block/above_brick_block",
+    "side": "havahs_adventure:block/above_brick_block"
+  },
+  "render_type": "solid"
+}

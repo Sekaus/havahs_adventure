@@ -1,0 +1,9 @@
+{
+  "parent": "havahs_adventure:custom/skyroot_4",
+  "textures": {
+    "all": "havahs_adventure:block/skyroot",
+    "particle": "havahs_adventure:block/skyroot",
+    "0": "havahs_adventure:block/skyroot"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "havahs_adventure:above_biome",
+    "havahs_adventure:small_land_area"
+  ],
+  "features": "havahs_adventure:above_fountains",
+  "step": "surface_structures"
+}

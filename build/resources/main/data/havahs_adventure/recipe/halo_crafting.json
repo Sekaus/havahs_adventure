@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:feather"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "havahs_adventure:above",
+    "count": 1
+  }
+}
