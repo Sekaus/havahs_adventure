@@ -1,0 +1,115 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": { "min": 1, "max": 4 },
+      "entries": [
+        { "type": "minecraft:item", "name": "havahs_adventure:light_crystal", "weight": 3, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "minecraft:item", "name": "minecraft:gold_ingot", "weight": 1, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 3 } }] },
+        { "type": "minecraft:item", "name": "minecraft:iron_ingot", "weight": 1, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 3 } }] },
+        { "type": "minecraft:item", "name": "minecraft:diamond", "weight": 1, "functions": [{ "function": "minecraft:set_count", "count": { "min": 0, "max": 1 } }] },
+        { "type": "minecraft:item", "name": "minecraft:saddle", "weight": 3, "functions": [{ "function": "minecraft:set_count", "count": { "min": 0, "max": 1 } }] },
+        { "type": "minecraft:item", "name": "minecraft:emerald", "weight": 1, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] }
+      ]
+    },
+    {
+      "rolls": { "min": 0, "max": 1 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:totem_of_undying", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:compass", "weight": 3 },
+        { "type": "minecraft:item", "name": "minecraft:amethyst_shard", "weight": 2, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 3 } }] },
+        { "type": "minecraft:item", "name": "minecraft:diamond_chestplate", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:deepslate_redstone_ore", "weight": 2 }
+      ]
+    },
+    {
+      "rolls": { "min": 0, "max": 3 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:iron_helmet", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:iron_chestplate", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:iron_leggings", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:iron_boots", "weight": 1 }
+      ]
+    },
+    {
+      "rolls": { "min": 0, "max": 1 },
+      "bonus_rolls": { "min": 0, "max": 1 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:honey_bottle", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:enchanted_golden_apple", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:golden_apple", "weight": 1 }
+      ]
+    },
+    {
+      "rolls": { "min": 3, "max": 7 },
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:string", "weight": 3, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "minecraft:item", "name": "minecraft:paper", "weight": 2, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "minecraft:item", "name": "minecraft:apple", "weight": 2, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "minecraft:item", "name": "minecraft:wheat", "weight": 1, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] },
+        { "type": "minecraft:item", "name": "minecraft:mushroom_stew", "weight": 1, "functions": [{ "function": "minecraft:set_count", "count": { "min": 1, "max": 2 } }] }
+      ]
+    },
+    {
+      "rolls": { "min": 1, "max": 2 },
+      "bonus_rolls": { "min": 0, "max": 1 },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:long_strength"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_regeneration"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:long_fire_resistance"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_swiftness"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "havahs_adventure:chests/above_block"
+}

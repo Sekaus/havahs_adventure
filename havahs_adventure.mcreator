@@ -1,0 +1,1758 @@
+{
+  "mod_elements": [
+    {
+      "name": "AboveBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/item/above_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_block.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FinelKey",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "finel_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/item/FinelKeyItem.java",
+          "src/main/resources/assets/havahs_adventure/models/item/finel_key.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "HavahsAdventure",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "havahs_adventure",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GotTheFinalKey",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "got_the_final_key",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/advancement/got_the_final_key.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FinelKeyItemIsCraftedsmelted",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "finel_key_item_is_craftedsmelted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/FinelKeyItemIsCraftedsmeltedProcedure.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "FinelKeyCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "finel_key_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/finel_key_crafting.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AboveBrickBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_brick_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/item/above_brick_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_block.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_brick_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AboveBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/biome/above_biome.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "LightCrystalBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_crystal_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/block/LightCrystalBlockBlock.java",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/light_crystal_block.json",
+          "src/main/resources/assets/havahs_adventure/models/item/light_crystal_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/light_crystal_block.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/light_crystal_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "LightCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/item/LightCrystalItem.java",
+          "src/main/resources/assets/havahs_adventure/models/item/light_crystal.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "LightCrystalBlockCreafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_crystal_block_creafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/light_crystal_block_creafting.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "AboveBrickStairBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_brick_stair_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_stair_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickStairBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/item/above_brick_stair_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block_inner.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_brick_stair_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block_outer.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AboveBrickStairBlockCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_brick_stair_block_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/above_brick_stair_block_crafting.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AboveBrickSlabBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_brick_slab_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block_full.json",
+          "src/main/resources/assets/havahs_adventure/models/item/above_brick_slab_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_slab_block.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_brick_slab_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block_top.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickSlabBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AboveBrickSlabBlockCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_brick_slab_block_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/above_brick_slab_block_crafting.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AboveBrickBlockCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_brick_block_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/above_brick_block_crafting.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FloatingCrystalBlocks",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floating_crystal_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/floating_crystal_blocks.json",
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/floating_crystal_blocks_biome_modifier.json",
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/floating_crystal_blocks.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "Above",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/block/AbovePortalBlock.java",
+          "src/main/java/net/mcreator/havahsadventure/world/teleporter/AboveTeleporter.java",
+          "src/main/java/net/mcreator/havahsadventure/world/teleporter/AbovePortalShape.java",
+          "src/main/resources/assets/havahs_adventure/models/block/above_portal_ew.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_portal_ns.json",
+          "src/main/java/net/mcreator/havahsadventure/item/AboveItem.java",
+          "src/main/resources/assets/havahs_adventure/models/item/above.json",
+          "src/main/java/net/mcreator/havahsadventure/world/dimension/AboveDimension.java",
+          "src/main/resources/data/havahs_adventure/dimension_type/above.json",
+          "src/main/resources/data/havahs_adventure/dimension/above.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_portal.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "LightCrystalBlockOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_crystal_block_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/LightCrystalBlockOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Lightweight",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightweight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/potion/LightweightMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "JumpBoost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_boost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/JumpBoostProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "SlowFall",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slow_fall",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/SlowFallProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "LightweightEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightweight_effect_startedapplied",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/LightweightEffectStartedappliedProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "LightweightEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightweight_effect_expires",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/LightweightEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "WhenInAbove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "when_in_above",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/WhenInAboveProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "HaloCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "halo_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/halo_crafting.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "NearAbovePortal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "near_above_portal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/NearAbovePortalProcedure.java"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "SmallLakes",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_lakes",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/small_lakes_biome_modifier.json",
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/small_lakes.json",
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/small_lakes.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "AboveChestLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "above_chest_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/loot_table/chests/above_block.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "Pegasus",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/item/pegasus_spawn_egg.json",
+          "src/main/java/net/mcreator/havahsadventure/client/renderer/PegasusRenderer.java",
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/pegasus_biome_modifier.json",
+          "src/main/java/net/mcreator/havahsadventure/entity/PegasusEntity.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusNaturalEntitySpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusEntityIsHurtProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusPlaybackConditionStartFlying",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_playback_condition_start_flying",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusPlaybackConditionStartFlyingProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusPlaybackConditionLanding",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_playback_condition_landing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusPlaybackConditionLandingProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusPlaybackConditionEating",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_playback_condition_eating",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusPlaybackConditionEatingProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PagasusSounds",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pagasus_sounds",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PagasusSoundsProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "IsAChild",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_a_child",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/IsAChildProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "IsFlying",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_flying",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/IsFlyingProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "IsWalking",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_walking",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/IsWalkingProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/damage_type/pegasus_damage.json"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusHasASaddleOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_has_a_saddle_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusHasASaddleOnProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusRightclickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pegasus_rightclicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusRightclickedOnEntityProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusFlyUp",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_fly_up",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/network/PegasusFlyUpMessage.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusFlyUpOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_fly_up_on_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusFlyUpOnKeyReleasedProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "RawPegasusMeat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_pegasus_meat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/item/RawPegasusMeatItem.java",
+          "src/main/resources/assets/havahs_adventure/models/item/raw_pegasus_meat.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "CookedPegasusMeat",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_pegasus_meat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/item/cooked_pegasus_meat.json",
+          "src/main/java/net/mcreator/havahsadventure/item/CookedPegasusMeatItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "CookedPegasusMeatSmilting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_pegasus_meat_smilting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/recipe/cooked_pegasus_meat_smilting.json",
+          "src/main/resources/data/havahs_adventure/advancement/recipes/cooked_pegasus_meat_smilting.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "CookedPegasusMeatCampfire",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_pegasus_meat_campfire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/advancement/recipes/cooked_pegasus_meat_campfire.json",
+          "src/main/resources/data/havahs_adventure/recipe/cooked_pegasus_meat_campfire.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "PegasusLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/loot_table/entities/pegasus.json"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "PegasusEntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusEntityDiesProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "SoftAboveBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soft_above_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/blockstates/soft_above_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/soft_above_block.json",
+          "src/main/resources/assets/havahs_adventure/models/item/soft_above_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/SoftAboveBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/block/soft_above_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SoftAboveBlockEntityCollidesInTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soft_above_block_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/SoftAboveBlockEntityCollidesInTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallAboveTemple",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_above_temple",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/template_pool/small_above_temple.json",
+          "src/main/resources/data/havahs_adventure/worldgen/structure/small_above_temple.json",
+          "src/main/resources/data/havahs_adventure/worldgen/structure_set/small_above_temple.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "AboveClouds",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_clouds",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/above_clouds_biome_modifier.json",
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/above_clouds.json",
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/above_clouds.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "Guard",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/entity/GuardEntity.java",
+          "src/main/java/net/mcreator/havahsadventure/client/renderer/GuardRenderer.java",
+          "src/main/resources/assets/havahs_adventure/models/item/guard_spawn_egg.json"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardDisplayConditionEyeState1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_display_condition_eye_state_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/GuardDisplayConditionEyeState1Procedure.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardDisplayConditionEyeState0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_display_condition_eye_state_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/GuardDisplayConditionEyeState0Procedure.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardDisplayConditionEyeState2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_display_condition_eye_state_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/GuardDisplayConditionEyeState2Procedure.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/GuardOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardAttack",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/client/renderer/GuardAttackRenderer.java",
+          "src/main/java/net/mcreator/havahsadventure/entity/GuardAttackEntity.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardAttackOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_attack_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/GuardAttackOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "EyePattern",
+      "type": "bannerpattern",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_pattern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/banner_pattern/eye_pattern.json"
+        ]
+      },
+      "path": "~/BannerPatterns"
+    },
+    {
+      "name": "SmallDotPattern",
+      "type": "bannerpattern",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_dot_pattern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/banner_pattern/small_dot_pattern.json"
+        ]
+      },
+      "path": "~/BannerPatterns"
+    },
+    {
+      "name": "SlimLinePattern",
+      "type": "bannerpattern",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slim_line_pattern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/banner_pattern/slim_line_pattern.json"
+        ]
+      },
+      "path": "~/BannerPatterns"
+    },
+    {
+      "name": "EyeBannerPattern",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_banner_pattern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/tags/banner_pattern/pattern_item/eye_banner_pattern.json",
+          "src/main/resources/assets/havahs_adventure/models/item/eye_banner_pattern.json",
+          "src/main/java/net/mcreator/havahsadventure/item/EyeBannerPatternItem.java"
+        ]
+      },
+      "path": "~/BannerPatterns"
+    },
+    {
+      "name": "GuardLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/loot_table/entities/guard.json"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "GuardEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guard_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/GuardEntityIsHurtProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Guard"
+    },
+    {
+      "name": "AboveTheWorld",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_the_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/advancement/above_the_world.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "AboveSand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/blockstates/above_sand.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_sand.json",
+          "src/main/resources/assets/havahs_adventure/models/item/above_sand.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveSandBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/block/above_sand.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "AboveGrassBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_grass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/block/above_grass_block.json",
+          "src/main/resources/assets/havahs_adventure/models/item/above_grass_block.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_grass_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_grass_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveGrassBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "PegasusJumping",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_jumping",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusJumpingProcedure.java"
+        ]
+      },
+      "path": "~/Entities/Pegasus"
+    },
+    {
+      "name": "AboveDirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/item/above_dirt.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_dirt.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveDirtBlock.java",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_dirt.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_dirt.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "SmallLandArea",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_land_area",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/biome/small_land_area.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "AboveFountains",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "above_fountains",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/above_fountains.json",
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/above_fountains.json",
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/above_fountains_biome_modifier.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "RuinedAbovePortalLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruined_above_portal_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/loot_table/chests/above.json"
+        ]
+      }
+    },
+    {
+      "name": "RuinedAbovePortal",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruined_above_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/structure_set/ruined_above_portal.json",
+          "src/main/resources/data/havahs_adventure/worldgen/structure/ruined_above_portal.json",
+          "src/main/resources/data/havahs_adventure/worldgen/template_pool/ruined_above_portal.json"
+        ]
+      }
+    },
+    {
+      "name": "Skyroot",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyroot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_3.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_9.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_6.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/skyroot.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_5.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_11.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_0.json",
+          "src/main/resources/assets/havahs_adventure/models/item/skyroot.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_8.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_1.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_10.json",
+          "src/main/java/net/mcreator/havahsadventure/block/entity/SkyrootBlockEntity.java",
+          "src/main/java/net/mcreator/havahsadventure/block/SkyrootBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_2.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/skyroot.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_7.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_4.json"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "SkyrootOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skyroot_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/SkyrootOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "SkyrootNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyroot_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/SkyrootNeighbourBlockChangesProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "PegasusMeatPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pegasus_meat_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/PegasusMeatPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "SkyrootFruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyroot_fruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/item/SkyrootFruitItem.java",
+          "src/main/resources/assets/havahs_adventure/models/item/skyroot_fruit.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "above_portel.ambient",
+      "files": [
+        "above_portel"
+      ],
+      "category": "block",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:AboveBrickStairBlock"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:AboveBrickSlabBlock"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:AboveGrassBlock",
+      "~CUSTOM:AboveBlock",
+      "~CUSTOM:AboveDirt"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:AboveBrickSlabBlock",
+      "~CUSTOM:AboveBrickStairBlock",
+      "~CUSTOM:LightCrystalBlock",
+      "~CUSTOM:AboveBrickBlock",
+      "~CUSTOM:AboveBlock"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:CookedPegasusMeat",
+      "~CUSTOM:RawPegasusMeat"
+    ],
+    "ENTITIES:minecraft:illager": [
+      "~CUSTOM:GuardAttack"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:Skyroot",
+      "~CUSTOM:AboveDirt",
+      "~CUSTOM:AboveGrassBlock",
+      "~CUSTOM:AboveSand"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:Skyroot"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.havahs_adventure.above_block": "Above Block",
+      "item.havahs_adventure.finel_key": "Finel Key",
+      "item_group.havahs_adventure.havahs_adventure": "Havah\u0027s Adventure",
+      "advancements.got_the_final_key.title": "Got the Final Key",
+      "advancements.got_the_final_key.descr": "Creaft the Final Key to the Final Boss!",
+      "block.havahs_adventure.above_brick_block": "Above Brick Block",
+      "block.havahs_adventure.light_crystal_block": "Light Crystal Block",
+      "item.havahs_adventure.light_crystal": "Light Crystal",
+      "block.havahs_adventure.above_brick_stair_block": "Above Brick Stair Block",
+      "block.havahs_adventure.above_brick_slab_block": "Above Brick Slab Block",
+      "subtitles.above_portel": "",
+      "effect.havahs_adventure.lightweight": "Lightweight",
+      "item.havahs_adventure.above": "Halo",
+      "subtitles.above_portal_block": "",
+      "subtitles.above_portel.ambient": "",
+      "entity.havahs_adventure.pegasus": "Pegasus",
+      "item.havahs_adventure.pegasus_spawn_egg": "Pegasus Spawn Egg",
+      "death.attack.pegasus_damage": "%1$s died of pegasus self-defense...",
+      "death.attack.pegasus_damage.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.pegasus_damage.player": "%1$s died whilst trying to escape %2$s",
+      "key.havahs_adventure.pegasus_fly_up": "Pegasus Fly Up",
+      "item.havahs_adventure.raw_pegasus_meat": "Raw Pegasus Meat",
+      "item.havahs_adventure.cooked_pegasus_meat": "Raw Pegasus Meat",
+      "block.havahs_adventure.soft_above_block": "Soft Above Block",
+      "entity.havahs_adventure.guard": "Guard",
+      "item.havahs_adventure.guard_spawn_egg": "Guard Spawn Egg",
+      "entity.havahs_adventure.guard_attack": "Guard Attack",
+      "block.havahs_adventure.banner.eye_pattern.lime": "Lime Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.light_gray": "Light Gray Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.orange": "Orange Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.light_blue": "Light Blue Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.blue": "Blue Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.magenta": "Magenta Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.purple": "Purple Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.red": "Red Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.pink": "Pink Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.gray": "Gray Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.black": "Black Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.cyan": "Cyan Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.green": "Green Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.white": "White Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.brown": "Brown Eye Pattern",
+      "block.havahs_adventure.banner.eye_pattern.yellow": "Yellow Eye Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.pink": "Pink Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.yellow": "Yellow Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.lime": "Lime Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.purple": "Purple Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.brown": "Brown Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.light_blue": "Light Blue Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.magenta": "Magenta Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.red": "Red Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.black": "Black Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.cyan": "Cyan Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.blue": "Blue Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.green": "Green Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.gray": "Gray Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.orange": "Orange Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.white": "White Small Dot Pattern",
+      "block.havahs_adventure.banner.small_dot_pattern.light_gray": "Light Gray Small Dot Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.brown": "Brown Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.green": "Green Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.orange": "Orange Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.yellow": "Yellow Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.light_blue": "Light Blue Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.white": "White Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.blue": "Blue Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.red": "Red Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.black": "Black Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.gray": "Gray Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.magenta": "Magenta Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.cyan": "Cyan Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.lime": "Lime Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.light_gray": "Light Gray Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.pink": "Pink Slim Line Pattern",
+      "block.havahs_adventure.banner.slim_line_pattern.purple": "Purple Slim Line Pattern",
+      "item.havahs_adventure.eye_banner_pattern": "Eye Banner Pattern",
+      "item.havahs_adventure.eye_banner_pattern.patterns": "Eye Pattern",
+      "advancements.above_the_world.title": "Above the World",
+      "advancements.above_the_world.descr": "Travel to the Above World",
+      "block.havahs_adventure.above_sand": "Above Sand",
+      "block.havahs_adventure.above_grass_block": "Above Grass Block",
+      "biome.havahs_adventure.above_biome": "The Above",
+      "block.havahs_adventure.above_dirt": "Above Dirt",
+      "biome.havahs_adventure.small_land_area": "Small Land Area",
+      "block.havahs_adventure.skyroot": "Skyroot",
+      "item.havahs_adventure.skyroot_fruit": "Skyroot Fruit"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/data/minecraft/tags/banner_pattern/no_item_required.json",
+      "src/main/java/net/mcreator/havahsadventure/world/features/StructureFeature.java",
+      "src/main/java/net/mcreator/havahsadventure/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModKeyMappings.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModMobEffects.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModBlocks.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModBlockEntities.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModItems.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModEntityRenderers.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModEntities.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModModels.java",
+      "src/main/java/net/mcreator/havahsadventure/HavahsAdventureMod.java",
+      "src/main/resources/assets/havahs_adventure/sounds.json",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModSounds.java",
+      "src/main/java/net/mcreator/havahsadventure/client/RenderUtils.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModTabs.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Plants",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Food",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": [
+          {
+            "name": "Above",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Entities",
+        "children": [
+          {
+            "name": "Pegasus",
+            "children": []
+          },
+          {
+            "name": "Guard",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "BannerPatterns",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "havahs_adventure",
+    "modName": "Havah\u0027s Adventure",
+    "version": "0.0.0",
+    "description": "Add more Adventure!",
+    "author": "Sekaus",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.havahsadventure"
+  },
+  "mcreatorVersion": 202600114619
+}

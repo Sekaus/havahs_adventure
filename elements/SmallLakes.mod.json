@@ -1,0 +1,17 @@
+{
+  "_fv": 85,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "LAKES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AboveBiome"
+      },
+      {
+        "value": "CUSTOM:SmallLandArea"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.WATER</field></block></value><value name=\"border\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:AboveSand</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_offset\"><value name=\"xz\"><block type=\"int_provider_uniform\"><field name=\"min\">-10</field><field name=\"max\">10</field></block></value><value name=\"y\"><block type=\"int_provider_uniform\"><field name=\"min\">-10</field><field name=\"max\">10</field></block></value><next><block type=\"placement_height_range\"><value name=\"height\"><block type=\"height_provider_weighted\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"3\"></mutation><field name=\"weight0\">1</field><field name=\"weight1\">1</field><field name=\"weight2\">1</field><value name=\"entry0\"><block type=\"height_provider_constant\"><value name=\"value\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">32</field></block></value></block></value><value name=\"entry1\"><block type=\"height_provider_constant\"><value name=\"value\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">64</field></block></value></block></value><value name=\"entry2\"><block type=\"height_provider_constant\"><value name=\"value\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">96</field></block></value></block></value></block></value></block></next></block></next></block></next></block></xml>"
+  }
+}

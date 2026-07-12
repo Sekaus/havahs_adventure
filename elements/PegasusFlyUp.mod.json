@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Pegasus Fly Up",
+    "keyBindingCategoryKey": "movement",
+    "onKeyReleased": {
+      "name": "PegasusFlyUpOnKeyReleased"
+    }
+  }
+}

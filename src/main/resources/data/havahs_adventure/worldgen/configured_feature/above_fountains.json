@@ -1,0 +1,7 @@
+{
+  "type": "havahs_adventure:structure_feature",
+  "config": {
+    "structure": "havahs_adventure:above_fountain",
+    "ignored_blocks": []
+  }
+}

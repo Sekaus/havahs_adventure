@@ -1,0 +1,14 @@
+{
+  "_fv": 85,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AboveBiome"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"31\" y=\"36\"><value name=\"feature\"><block type=\"feature_replace_single_block\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><value name=\"target0\"><block type=\"ore_target\"><value name=\"target\"><block type=\"rule_test_tag_match\"><field name=\"tag\">minecraft:air</field></block></value><value name=\"state\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:LightCrystalBlock</field></block></value></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">8</field><next><block type=\"placement_height_range\"><value name=\"height\"><block type=\"height_provider_weighted\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><field name=\"weight0\">1</field><field name=\"weight1\">1</field><value name=\"entry0\"><block type=\"height_provider_constant\"><value name=\"value\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">64</field></block></value></block></value><value name=\"entry1\"><block type=\"height_provider_constant\"><value name=\"value\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">76</field></block></value></block></value></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_uniform\"><field name=\"min\">1</field><field name=\"max\">4</field></block></value><next><block type=\"placement_offset\"><value name=\"xz\"><block type=\"int_provider_uniform\"><field name=\"min\">-16</field><field name=\"max\">16</field></block></value><value name=\"y\"><block type=\"int_provider_uniform\"><field name=\"min\">-16</field><field name=\"max\">16</field></block></value></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

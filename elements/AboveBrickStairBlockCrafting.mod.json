@@ -1,0 +1,49 @@
+{
+  "_fv": 85,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 5,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AboveBrickBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AboveBrickBlock"
+      },
+      {
+        "value": "CUSTOM:AboveBrickBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AboveBrickBlock"
+      },
+      {
+        "value": "CUSTOM:AboveBrickBlock"
+      },
+      {
+        "value": "CUSTOM:AboveBrickBlock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AboveBrickStairBlock"
+    },
+    "name": "above_brick_stair_block_crafting",
+    "namespace": "mod"
+  }
+}

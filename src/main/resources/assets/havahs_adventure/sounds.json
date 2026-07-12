@@ -1,0 +1,10 @@
+{
+  "above_portel.ambient": {
+    "sounds": [
+      {
+        "name": "havahs_adventure:above_portel",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "feature": "havahs_adventure:above_fountains",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 30
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "uniform",
+        "min_inclusive": -4,
+        "max_inclusive": 4
+      },
+      "y_spread": {
+        "type": "uniform",
+        "min_inclusive": -4,
+        "max_inclusive": 4
+      }
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "_fv": 85,
+  "_type": "bannerpattern",
+  "definition": {
+    "texture": "small_dot_patten",
+    "shieldTexture": "small_dot_patten_shield",
+    "name": "Small Dot Pattern",
+    "requireItem": false
+  }
+}

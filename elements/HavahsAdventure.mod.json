@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Havah's Adventure",
+    "icon": {
+      "value": "CUSTOM:FinelKey"
+    },
+    "showSearch": false
+  }
+}

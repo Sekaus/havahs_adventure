@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "havahs_adventure:block/above_portal_ew"
+    },
+    "axis=x": {
+      "model": "havahs_adventure:block/above_portal_ns"
+    }
+  }
+}

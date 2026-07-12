@@ -1,0 +1,10 @@
+{
+  "_fv": 85,
+  "_type": "bannerpattern",
+  "definition": {
+    "texture": "slim_line_patten",
+    "shieldTexture": "slim_line_patten_shield",
+    "name": "Slim Line Pattern",
+    "requireItem": false
+  }
+}
