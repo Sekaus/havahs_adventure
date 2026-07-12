@@ -20,3 +20,4 @@ run/*
 build/*
 !build/resources
 .eclipse/*
+.mcreator/userSettings
