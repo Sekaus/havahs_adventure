@@ -22,4 +22,4 @@ build/*
 !build/resources
 .eclipse/*
 havahs_adventure/.mcreator
-modElementThumbnails/*
+*/modElementThumbnails/*
