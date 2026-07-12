@@ -8,11 +8,11 @@
       "registry_name": "above_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/havahsadventure/block/AboveBlockBlock.java",
-          "src/main/resources/assets/havahs_adventure/models/item/above_block.json",
-          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_block.json",
           "src/main/resources/assets/havahs_adventure/models/block/above_block.json",
-          "src/main/resources/assets/havahs_adventure/blockstates/above_block.json"
+          "src/main/resources/assets/havahs_adventure/blockstates/above_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_block.json",
+          "src/main/resources/assets/havahs_adventure/models/item/above_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBlockBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -94,8 +94,8 @@
       "registry_name": "above_brick_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/models/item/above_brick_block.json",
           "src/main/java/net/mcreator/havahsadventure/block/AboveBrickBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/item/above_brick_block.json",
           "src/main/resources/assets/havahs_adventure/models/block/above_brick_block.json",
           "src/main/resources/assets/havahs_adventure/blockstates/above_brick_block.json",
           "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_block.json"
@@ -124,11 +124,11 @@
       "registry_name": "light_crystal_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/havahsadventure/block/LightCrystalBlockBlock.java",
           "src/main/resources/data/havahs_adventure/loot_table/blocks/light_crystal_block.json",
-          "src/main/resources/assets/havahs_adventure/models/item/light_crystal_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/LightCrystalBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/blockstates/light_crystal_block.json",
           "src/main/resources/assets/havahs_adventure/models/block/light_crystal_block.json",
-          "src/main/resources/assets/havahs_adventure/blockstates/light_crystal_block.json"
+          "src/main/resources/assets/havahs_adventure/models/item/light_crystal_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -141,8 +141,8 @@
       "registry_name": "light_crystal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/havahsadventure/item/LightCrystalItem.java",
-          "src/main/resources/assets/havahs_adventure/models/item/light_crystal.json"
+          "src/main/resources/assets/havahs_adventure/models/item/light_crystal.json",
+          "src/main/java/net/mcreator/havahsadventure/item/LightCrystalItem.java"
         ]
       },
       "path": "~/Items"
@@ -168,13 +168,13 @@
       "registry_name": "above_brick_stair_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block.json",
-          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_stair_block.json",
-          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickStairBlockBlock.java",
           "src/main/resources/assets/havahs_adventure/models/item/above_brick_stair_block.json",
-          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block_inner.json",
           "src/main/resources/assets/havahs_adventure/blockstates/above_brick_stair_block.json",
-          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block_outer.json"
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_stair_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block_inner.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block_outer.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickStairBlockBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_stair_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -200,13 +200,13 @@
       "registry_name": "above_brick_slab_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block.json",
-          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block_full.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block_top.json",
           "src/main/resources/assets/havahs_adventure/models/item/above_brick_slab_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block_full.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickSlabBlockBlock.java",
           "src/main/resources/data/havahs_adventure/loot_table/blocks/above_brick_slab_block.json",
           "src/main/resources/assets/havahs_adventure/blockstates/above_brick_slab_block.json",
-          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block_top.json",
-          "src/main/java/net/mcreator/havahsadventure/block/AboveBrickSlabBlockBlock.java"
+          "src/main/resources/assets/havahs_adventure/models/block/above_brick_slab_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -246,8 +246,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/havahs_adventure/worldgen/placed_feature/floating_crystal_blocks.json",
-          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/floating_crystal_blocks_biome_modifier.json",
-          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/floating_crystal_blocks.json"
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/floating_crystal_blocks.json",
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/floating_crystal_blocks_biome_modifier.json"
         ]
       },
       "path": "~/Dimensions/Above"
@@ -260,17 +260,17 @@
       "registry_name": "above",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/havahsadventure/block/AbovePortalBlock.java",
+          "src/main/java/net/mcreator/havahsadventure/world/dimension/AboveDimension.java",
           "src/main/java/net/mcreator/havahsadventure/world/teleporter/AboveTeleporter.java",
           "src/main/java/net/mcreator/havahsadventure/world/teleporter/AbovePortalShape.java",
-          "src/main/resources/assets/havahs_adventure/models/block/above_portal_ew.json",
           "src/main/resources/assets/havahs_adventure/models/block/above_portal_ns.json",
-          "src/main/java/net/mcreator/havahsadventure/item/AboveItem.java",
-          "src/main/resources/assets/havahs_adventure/models/item/above.json",
-          "src/main/java/net/mcreator/havahsadventure/world/dimension/AboveDimension.java",
+          "src/main/java/net/mcreator/havahsadventure/block/AbovePortalBlock.java",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_portal.json",
           "src/main/resources/data/havahs_adventure/dimension_type/above.json",
           "src/main/resources/data/havahs_adventure/dimension/above.json",
-          "src/main/resources/assets/havahs_adventure/blockstates/above_portal.json"
+          "src/main/java/net/mcreator/havahsadventure/item/AboveItem.java",
+          "src/main/resources/assets/havahs_adventure/models/block/above_portal_ew.json",
+          "src/main/resources/assets/havahs_adventure/models/item/above.json"
         ]
       },
       "path": "~/Dimensions/Above"
@@ -501,8 +501,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/havahs_adventure/models/item/pegasus_spawn_egg.json",
-          "src/main/java/net/mcreator/havahsadventure/client/renderer/PegasusRenderer.java",
           "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/pegasus_biome_modifier.json",
+          "src/main/java/net/mcreator/havahsadventure/client/renderer/PegasusRenderer.java",
           "src/main/java/net/mcreator/havahsadventure/entity/PegasusEntity.java"
         ]
       },
@@ -853,8 +853,8 @@
       "registry_name": "raw_pegasus_meat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/havahsadventure/item/RawPegasusMeatItem.java",
-          "src/main/resources/assets/havahs_adventure/models/item/raw_pegasus_meat.json"
+          "src/main/resources/assets/havahs_adventure/models/item/raw_pegasus_meat.json",
+          "src/main/java/net/mcreator/havahsadventure/item/RawPegasusMeatItem.java"
         ]
       },
       "path": "~/Items/Food"
@@ -881,8 +881,8 @@
       "registry_name": "cooked_pegasus_meat_smilting",
       "metadata": {
         "files": [
-          "src/main/resources/data/havahs_adventure/recipe/cooked_pegasus_meat_smilting.json",
-          "src/main/resources/data/havahs_adventure/advancement/recipes/cooked_pegasus_meat_smilting.json"
+          "src/main/resources/data/havahs_adventure/advancement/recipes/cooked_pegasus_meat_smilting.json",
+          "src/main/resources/data/havahs_adventure/recipe/cooked_pegasus_meat_smilting.json"
         ]
       },
       "path": "~/Items/Food"
@@ -957,11 +957,11 @@
       "registry_name": "soft_above_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/blockstates/soft_above_block.json",
-          "src/main/resources/data/havahs_adventure/loot_table/blocks/soft_above_block.json",
-          "src/main/resources/assets/havahs_adventure/models/item/soft_above_block.json",
           "src/main/java/net/mcreator/havahsadventure/block/SoftAboveBlockBlock.java",
-          "src/main/resources/assets/havahs_adventure/models/block/soft_above_block.json"
+          "src/main/resources/assets/havahs_adventure/models/block/soft_above_block.json",
+          "src/main/resources/assets/havahs_adventure/models/item/soft_above_block.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/soft_above_block.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/soft_above_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -993,9 +993,9 @@
       "registry_name": "small_above_temple",
       "metadata": {
         "files": [
-          "src/main/resources/data/havahs_adventure/worldgen/template_pool/small_above_temple.json",
           "src/main/resources/data/havahs_adventure/worldgen/structure/small_above_temple.json",
-          "src/main/resources/data/havahs_adventure/worldgen/structure_set/small_above_temple.json"
+          "src/main/resources/data/havahs_adventure/worldgen/structure_set/small_above_temple.json",
+          "src/main/resources/data/havahs_adventure/worldgen/template_pool/small_above_temple.json"
         ]
       },
       "path": "~/Dimensions/Above"
@@ -1024,8 +1024,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/havahsadventure/entity/GuardEntity.java",
-          "src/main/java/net/mcreator/havahsadventure/client/renderer/GuardRenderer.java",
-          "src/main/resources/assets/havahs_adventure/models/item/guard_spawn_egg.json"
+          "src/main/resources/assets/havahs_adventure/models/item/guard_spawn_egg.json",
+          "src/main/java/net/mcreator/havahsadventure/client/renderer/GuardRenderer.java"
         ]
       },
       "path": "~/Entities/Guard"
@@ -1133,8 +1133,8 @@
       "registry_name": "guard_attack",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/havahsadventure/client/renderer/GuardAttackRenderer.java",
-          "src/main/java/net/mcreator/havahsadventure/entity/GuardAttackEntity.java"
+          "src/main/java/net/mcreator/havahsadventure/entity/GuardAttackEntity.java",
+          "src/main/java/net/mcreator/havahsadventure/client/renderer/GuardAttackRenderer.java"
         ]
       },
       "path": "~/Entities/Guard"
@@ -1205,9 +1205,9 @@
       "registry_name": "eye_banner_pattern",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/havahsadventure/item/EyeBannerPatternItem.java",
           "src/main/resources/data/havahs_adventure/tags/banner_pattern/pattern_item/eye_banner_pattern.json",
-          "src/main/resources/assets/havahs_adventure/models/item/eye_banner_pattern.json",
-          "src/main/java/net/mcreator/havahsadventure/item/EyeBannerPatternItem.java"
+          "src/main/resources/assets/havahs_adventure/models/item/eye_banner_pattern.json"
         ]
       },
       "path": "~/BannerPatterns"
@@ -1277,11 +1277,11 @@
       "registry_name": "above_sand",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/blockstates/above_sand.json",
-          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_sand.json",
           "src/main/resources/assets/havahs_adventure/models/item/above_sand.json",
           "src/main/java/net/mcreator/havahsadventure/block/AboveSandBlock.java",
-          "src/main/resources/assets/havahs_adventure/models/block/above_sand.json"
+          "src/main/resources/assets/havahs_adventure/models/block/above_sand.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_sand.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/above_sand.json"
         ]
       },
       "path": "~/Blocks"
@@ -1294,11 +1294,11 @@
       "registry_name": "above_grass_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/models/block/above_grass_block.json",
-          "src/main/resources/assets/havahs_adventure/models/item/above_grass_block.json",
           "src/main/resources/assets/havahs_adventure/blockstates/above_grass_block.json",
-          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_grass_block.json",
-          "src/main/java/net/mcreator/havahsadventure/block/AboveGrassBlockBlock.java"
+          "src/main/resources/assets/havahs_adventure/models/item/above_grass_block.json",
+          "src/main/resources/assets/havahs_adventure/models/block/above_grass_block.json",
+          "src/main/java/net/mcreator/havahsadventure/block/AboveGrassBlockBlock.java",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/above_grass_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -1330,11 +1330,11 @@
       "registry_name": "above_dirt",
       "metadata": {
         "files": [
+          "src/main/resources/assets/havahs_adventure/blockstates/above_dirt.json",
           "src/main/resources/assets/havahs_adventure/models/item/above_dirt.json",
-          "src/main/resources/assets/havahs_adventure/models/block/above_dirt.json",
           "src/main/java/net/mcreator/havahsadventure/block/AboveDirtBlock.java",
           "src/main/resources/data/havahs_adventure/loot_table/blocks/above_dirt.json",
-          "src/main/resources/assets/havahs_adventure/blockstates/above_dirt.json"
+          "src/main/resources/assets/havahs_adventure/models/block/above_dirt.json"
         ]
       },
       "path": "~/Blocks"
@@ -1361,9 +1361,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/above_fountains.json",
           "src/main/resources/data/havahs_adventure/worldgen/configured_feature/above_fountains.json",
-          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/above_fountains_biome_modifier.json"
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/above_fountains_biome_modifier.json",
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/above_fountains.json"
         ]
       },
       "path": "~/Dimensions/Above"
@@ -1389,8 +1389,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/havahs_adventure/worldgen/structure_set/ruined_above_portal.json",
-          "src/main/resources/data/havahs_adventure/worldgen/structure/ruined_above_portal.json",
-          "src/main/resources/data/havahs_adventure/worldgen/template_pool/ruined_above_portal.json"
+          "src/main/resources/data/havahs_adventure/worldgen/template_pool/ruined_above_portal.json",
+          "src/main/resources/data/havahs_adventure/worldgen/structure/ruined_above_portal.json"
         ]
       }
     },
@@ -1402,24 +1402,24 @@
       "registry_name": "skyroot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_3.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_4.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_7.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_11.json",
+          "src/main/java/net/mcreator/havahsadventure/block/SkyrootBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/item/skyroot.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_1.json",
           "src/main/resources/assets/havahs_adventure/models/block/skyroot_9.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot.json",
           "src/main/resources/assets/havahs_adventure/models/block/skyroot_6.json",
+          "src/main/java/net/mcreator/havahsadventure/block/entity/SkyrootBlockEntity.java",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_3.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_10.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_0.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_2.json",
+          "src/main/resources/assets/havahs_adventure/models/block/skyroot_8.json",
           "src/main/resources/assets/havahs_adventure/blockstates/skyroot.json",
           "src/main/resources/assets/havahs_adventure/models/block/skyroot_5.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_11.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_0.json",
-          "src/main/resources/assets/havahs_adventure/models/item/skyroot.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_8.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_1.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_10.json",
-          "src/main/java/net/mcreator/havahsadventure/block/entity/SkyrootBlockEntity.java",
-          "src/main/java/net/mcreator/havahsadventure/block/SkyrootBlock.java",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_2.json",
-          "src/main/resources/data/havahs_adventure/loot_table/blocks/skyroot.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_7.json",
-          "src/main/resources/assets/havahs_adventure/models/block/skyroot_4.json"
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/skyroot.json"
         ]
       },
       "path": "~/Blocks/Plants"
@@ -1522,6 +1522,54 @@
         ]
       },
       "path": "~/Items/Food"
+    },
+    {
+      "name": "SkyrootOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyroot_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/SkyrootOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "SkyrootFruitLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skyroot_fruit_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/loot_table/gameplay/skyroot.json"
+        ]
+      },
+      "path": "~/Blocks/Plants"
     }
   ],
   "variable_elements": [],
@@ -1672,17 +1720,17 @@
       "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModBlocks.java",
       "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModBlockEntities.java",
       "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModItems.java",
-      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModEntityRenderers.java",
       "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModEntities.java",
-      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModModels.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModEntityRenderers.java",
       "src/main/java/net/mcreator/havahsadventure/HavahsAdventureMod.java",
-      "src/main/resources/assets/havahs_adventure/sounds.json",
-      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModSounds.java",
-      "src/main/java/net/mcreator/havahsadventure/client/RenderUtils.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModModels.java",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModTabs.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModSounds.java",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/havahsadventure/init/HavahsAdventureModTabs.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/havahs_adventure/sounds.json",
+      "src/main/java/net/mcreator/havahsadventure/client/RenderUtils.java"
     ]
   },
   "foldersRoot": {

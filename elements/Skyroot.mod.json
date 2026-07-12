@@ -753,6 +753,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "SkyrootOnBlockRightclicked"
+    },
     "onNeighbourBlockChanges": {
       "name": "SkyrootNeighbourBlockChanges"
     },

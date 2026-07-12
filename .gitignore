@@ -18,3 +18,4 @@ gradle/*
 .gradle/*
 run/*
 build/*
+.eclipse/*
