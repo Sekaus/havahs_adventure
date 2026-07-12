@@ -1,6 +1,7 @@
 *.bat
 gradlew
 *.mcreator-backup_*
+.mcreator/userSettings
 
 # Binary filter
 
@@ -20,4 +21,5 @@ run/*
 build/*
 !build/resources
 .eclipse/*
-.mcreator/userSettings
+havahs_adventure/.mcreator
+modElementThumbnails/*
