@@ -1,0 +1,20 @@
+*.bat
+gradlew
+*.mcreator-backup_*
+
+# Binary filter
+
+*.gz
+*.jar
+*.bin
+*.lock
+*/generatorGradleCache
+*$*
+*.imgmeta
+
+# folder filter
+
+gradle/*
+.gradle/*
+run/*
+build/*
