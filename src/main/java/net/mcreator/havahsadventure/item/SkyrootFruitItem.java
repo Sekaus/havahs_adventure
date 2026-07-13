@@ -1,6 +1,5 @@
 package net.mcreator.havahsadventure.item;
 
-import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
@@ -12,12 +11,7 @@ public class SkyrootFruitItem extends Item {
 	}
 
 	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.NONE;
-	}
-
-	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 0;
+		return 3;
 	}
 }
