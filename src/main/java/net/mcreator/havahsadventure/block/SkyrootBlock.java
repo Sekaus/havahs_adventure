@@ -220,7 +220,7 @@ public class SkyrootBlock extends Block implements SimpleWaterloggedBlock, Entit
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		SkyrootOnBlockRightclickedProcedure.execute(world, x, y, z, blockstate);
+		SkyrootOnBlockRightclickedProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 

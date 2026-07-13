@@ -1527,13 +1527,17 @@
       "name": "SkyrootOnBlockRightclicked",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "skyroot_on_block_rightclicked",
       "metadata": {
         "dependencies": [
           {
             "name": "blockstate",
             "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "x",
