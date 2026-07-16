@@ -45,7 +45,7 @@ public class SkyrootBlock extends Block implements SimpleWaterloggedBlock, Entit
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SkyrootBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.ROOTS).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
+		super(BlockBehaviour.Properties.of().sound(SoundType.ROOTS).strength(1f, 10f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.HAT));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(PARTS, PartsProperty.STEM_0).setValue(WATERLOGGED, false));
 	}
 
