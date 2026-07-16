@@ -1614,12 +1614,11 @@
       "~CUSTOM:GuardAttack"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:Skyroot",
       "~CUSTOM:AboveDirt",
       "~CUSTOM:AboveGrassBlock",
       "~CUSTOM:AboveSand"
     ],
-    "BLOCKS:minecraft:needs_stone_tool": [
+    "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:Skyroot"
     ]
   },
