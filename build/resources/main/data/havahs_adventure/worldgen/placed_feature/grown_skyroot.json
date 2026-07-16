@@ -1,0 +1,27 @@
+{
+  "feature": "havahs_adventure:grown_skyroot",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "environment_scan",
+      "direction_of_search": "down",
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "havahs_adventure:above_grass_block",
+        "offset": [
+          0,
+          -1,
+          0
+        ]
+      },
+      "max_steps": 1
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 5
+    }
+  ]
+}

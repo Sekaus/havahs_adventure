@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": {
+        "type": "minecraft:no_op",
+        "config": {}
+      },
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "havahs_adventure:structure_feature",
+            "config": {
+              "structure": "havahs_adventure:skyroot_0",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:air"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "havahs_adventure:structure_feature",
+            "config": {
+              "structure": "havahs_adventure:skyroot_1",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:air"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "havahs_adventure:structure_feature",
+            "config": {
+              "structure": "havahs_adventure:skyroot_2",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:air"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "havahs_adventure:structure_feature",
+            "config": {
+              "structure": "havahs_adventure:skyroot_3",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:air"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.5,
+        "feature": {
+          "feature": {
+            "type": "havahs_adventure:structure_feature",
+            "config": {
+              "structure": "havahs_adventure:skyroot_4",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:air"
+            }
+          },
+          "placement": []
+        }
+      }
+    ]
+  }
+}

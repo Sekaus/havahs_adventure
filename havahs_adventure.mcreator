@@ -1574,6 +1574,22 @@
         ]
       },
       "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "GrownSkyroot",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grown_skyroot",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/grown_skyroot.json",
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/grown_skyroot_biome_modifier.json",
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/grown_skyroot.json"
+        ]
+      },
+      "path": "~/Dimensions/Above"
     }
   ],
   "variable_elements": [],
