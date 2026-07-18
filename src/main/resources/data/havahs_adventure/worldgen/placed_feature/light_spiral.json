@@ -2,6 +2,10 @@
   "feature": "havahs_adventure:light_spiral",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
       "type": "minecraft:rarity_filter",
       "chance": 32
     },
