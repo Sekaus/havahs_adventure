@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "havahs_adventure:block/light_spiral",
+    "particle": "havahs_adventure:block/light_spiral"
+  },
+  "render_type": "cutout"
+}
