@@ -7,6 +7,7 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.Difficulty;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
@@ -33,7 +34,25 @@ public class GuardOnEntityTickUpdateProcedure {
 					if (entityiterator instanceof Player && (getEntityGameType(entityiterator) == GameType.SURVIVAL || getEntityGameType(entityiterator) == GameType.SURVIVAL)) {
 						if (entity instanceof GuardEntity _datEntSetI)
 							_datEntSetI.getEntityData().set(GuardEntity.DATA_eye_state, 0);
-						if (Mth.nextInt(RandomSource.create(), 0, 1) == 1) {
+						if (world.getDifficulty() == Difficulty.EASY) {
+							if (Mth.nextInt(RandomSource.create(), 0, 2) == 1) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = HavahsAdventureModEntities.GUARD_ATTACK.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+							}
+						} else if (world.getDifficulty() == Difficulty.NORMAL) {
+							if (Mth.nextInt(RandomSource.create(), 0, 1) == 1) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = HavahsAdventureModEntities.GUARD_ATTACK.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setDeltaMovement(0, 0, 0);
+									}
+								}
+							}
+						} else if (world.getDifficulty() == Difficulty.HARD) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = HavahsAdventureModEntities.GUARD_ATTACK.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
