@@ -84,5 +84,9 @@
   "block.havahs_adventure.above_dirt": "Above Dirt",
   "biome.havahs_adventure.small_land_area": "Small Land Area",
   "block.havahs_adventure.skyroot": "Skyroot",
-  "item.havahs_adventure.skyroot_fruit": "Skyroot Fruit"
+  "item.havahs_adventure.skyroot_fruit": "Skyroot Fruit",
+  "block.havahs_adventure.light_spiral": "Light Spiral",
+  "death.attack.light_spiral_damage": "%1$s died",
+  "death.attack.light_spiral_damage.item": "%1$s was killed by %2$s using %3$s",
+  "death.attack.light_spiral_damage.player": "%1$s died whilst trying to escape %2$s"
 }
