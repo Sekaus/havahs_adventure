@@ -89,7 +89,7 @@
     "xpAmountMin": 0,
     "xpAmountMax": 0,
     "forceTicking": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -112,7 +112,7 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 1,
+    "frequencyOnChunks": 3,
     "generateFeature": true,
     "restrictionBiomes": [
       {
@@ -120,7 +120,7 @@
       }
     ],
     "generationType": "Flower",
-    "patchSize": 10,
+    "patchSize": 30,
     "generateAtAnyHeight": false,
     "onEntityCollides": {
       "name": "LightSpiralMobplayerCollidesWithPlant"
