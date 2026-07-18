@@ -41,6 +41,7 @@ public class HavahsAdventureModTabs {
 				tabData.accept(HavahsAdventureModBlocks.ABOVE_DIRT.get().asItem());
 				tabData.accept(HavahsAdventureModBlocks.SKYROOT.get().asItem());
 				tabData.accept(HavahsAdventureModItems.SKYROOT_FRUIT.get());
+				tabData.accept(HavahsAdventureModBlocks.LIGHT_SPIRAL.get().asItem());
 			}).build());
 
 	@SubscribeEvent
@@ -53,6 +54,7 @@ public class HavahsAdventureModTabs {
 			tabData.accept(HavahsAdventureModBlocks.ABOVE_GRASS_BLOCK.get().asItem());
 			tabData.accept(HavahsAdventureModBlocks.ABOVE_DIRT.get().asItem());
 			tabData.accept(HavahsAdventureModBlocks.SKYROOT.get().asItem());
+			tabData.accept(HavahsAdventureModBlocks.LIGHT_SPIRAL.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(HavahsAdventureModBlocks.ABOVE_BRICK_BLOCK.get().asItem());
 			tabData.accept(HavahsAdventureModBlocks.ABOVE_BRICK_STAIR_BLOCK.get().asItem());

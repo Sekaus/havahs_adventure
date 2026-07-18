@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "havahs_adventure:small_land_area",
+  "features": "havahs_adventure:light_spiral",
+  "step": "vegetal_decoration"
+}

@@ -1590,6 +1590,62 @@
         ]
       },
       "path": "~/Dimensions/Above"
+    },
+    {
+      "name": "LightSpiral",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_spiral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/block/LightSpiralBlock.java",
+          "src/main/resources/assets/havahs_adventure/models/block/light_spiral.json",
+          "src/main/resources/assets/havahs_adventure/models/item/light_spiral.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/light_spiral.json",
+          "src/main/resources/assets/havahs_adventure/blockstates/light_spiral.json",
+          "src/main/resources/data/havahs_adventure/worldgen/configured_feature/light_spiral.json",
+          "src/main/resources/data/havahs_adventure/worldgen/placed_feature/light_spiral.json",
+          "src/main/resources/data/havahs_adventure/neoforge/biome_modifier/light_spiral_biome_modifier.json"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "LightSpiralMobplayerCollidesWithPlant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_spiral_mobplayer_collides_with_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/LightSpiralMobplayerCollidesWithPlantProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "LightSpiralDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_spiral_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/havahs_adventure/damage_type/light_spiral_damage.json"
+        ]
+      },
+      "path": "~/Blocks/Plants"
     }
   ],
   "variable_elements": [],
@@ -1726,7 +1782,11 @@
       "block.havahs_adventure.above_dirt": "Above Dirt",
       "biome.havahs_adventure.small_land_area": "Small Land Area",
       "block.havahs_adventure.skyroot": "Skyroot",
-      "item.havahs_adventure.skyroot_fruit": "Skyroot Fruit"
+      "item.havahs_adventure.skyroot_fruit": "Skyroot Fruit",
+      "block.havahs_adventure.light_spiral": "Light Spiral",
+      "death.attack.light_spiral_damage": "%1$s died",
+      "death.attack.light_spiral_damage.item": "%1$s was killed by %2$s using %3$s",
+      "death.attack.light_spiral_damage.player": "%1$s died whilst trying to escape %2$s"
     }
   },
   "metadata": {

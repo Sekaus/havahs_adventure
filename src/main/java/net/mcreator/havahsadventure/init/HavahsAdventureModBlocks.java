@@ -5,6 +5,10 @@ package net.mcreator.havahsadventure.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -24,6 +28,7 @@ public class HavahsAdventureModBlocks {
 	public static final DeferredBlock<Block> ABOVE_GRASS_BLOCK;
 	public static final DeferredBlock<Block> ABOVE_DIRT;
 	public static final DeferredBlock<Block> SKYROOT;
+	public static final DeferredBlock<Block> LIGHT_SPIRAL;
 	static {
 		ABOVE_BLOCK = REGISTRY.register("above_block", AboveBlockBlock::new);
 		ABOVE_BRICK_BLOCK = REGISTRY.register("above_brick_block", AboveBrickBlockBlock::new);
@@ -36,7 +41,21 @@ public class HavahsAdventureModBlocks {
 		ABOVE_GRASS_BLOCK = REGISTRY.register("above_grass_block", AboveGrassBlockBlock::new);
 		ABOVE_DIRT = REGISTRY.register("above_dirt", AboveDirtBlock::new);
 		SKYROOT = REGISTRY.register("skyroot", SkyrootBlock::new);
+		LIGHT_SPIRAL = REGISTRY.register("light_spiral", LightSpiralBlock::new);
 	}
+
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			LightSpiralBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+			LightSpiralBlock.itemColorLoad(event);
+		}
+	}
 }
