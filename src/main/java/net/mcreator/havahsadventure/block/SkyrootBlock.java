@@ -34,6 +34,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.havahsadventure.procedures.SkyrootOnTickUpdateProcedure;
 import net.mcreator.havahsadventure.procedures.SkyrootOnBlockRightclickedProcedure;
 import net.mcreator.havahsadventure.procedures.SkyrootNeighbourBlockChangesProcedure;
+import net.mcreator.havahsadventure.procedures.SkyrootBlockAddedProcedure;
 import net.mcreator.havahsadventure.block.entity.SkyrootBlockEntity;
 
 import com.google.common.collect.ImmutableMap;
@@ -196,6 +197,12 @@ public class SkyrootBlock extends Block implements SimpleWaterloggedBlock, Entit
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		SkyrootBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

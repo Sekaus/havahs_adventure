@@ -756,6 +756,9 @@
     "onRightClicked": {
       "name": "SkyrootOnBlockRightclicked"
     },
+    "onBlockAdded": {
+      "name": "SkyrootBlockAdded"
+    },
     "onNeighbourBlockChanges": {
       "name": "SkyrootNeighbourBlockChanges"
     },

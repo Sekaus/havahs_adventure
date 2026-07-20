@@ -13,8 +13,6 @@ import net.minecraft.core.Direction;
 
 import net.mcreator.havahsadventure.init.HavahsAdventureModBlocks;
 
-import java.util.Random;
-
 public class SkyrootOnTickUpdateProcedure extends net.mcreator.havahsadventure.Utils {
 
     private static final EnumProperty<?> PARTS_PROPERTY =
@@ -26,130 +24,118 @@ public class SkyrootOnTickUpdateProcedure extends net.mcreator.havahsadventure.U
         if (world.isClientSide()) return;
 
         BlockPos currentPos = BlockPos.containing(x, y, z);
-        
-        BlockEntity be = world.getBlockEntity(currentPos);
 
-        // Initialize NBT
-        initializeNBT(be, currentPos.getY());
-
-        int rootY = getBlockNBTInt(be, "rootY");
-        int maxHeight = getBlockNBTInt(be, "maxHeight");
-        int seed = getBlockNBTInt(be, "growthSeed");
-        boolean hasFruit = getBlockNBTBoolean(be, "hasFruit");
-        int currentY = currentPos.getY();
-
-        // Fruit state
-        if (currentY == rootY && !hasFruit) {
-            // Use 'blockstate' (from method args) and 'currentPos' (defined above)
-            var currentProperty = blockstate.getValue((EnumProperty) PARTS_PROPERTY);
-            
-            // Check if it's the final stem stage
-            if ("stem_6".equals(currentProperty.toString())) {
-			    CompoundTag data = be.getPersistentData();
-			    data.putBoolean("hasFruit", true);
-			    be.setChanged();
-			
-			    BlockState nextState = blockstate;
-			    var partValue = PARTS_PROPERTY.getValue("stem_with_fruit");
-			
-			    if (partValue.isPresent()) {
-			        nextState = nextState.setValue(
-			            (EnumProperty) PARTS_PROPERTY,
-			            (Enum) partValue.get()
-			        );
-			    }
-			
-			    if (nextState != blockstate) {
-			        world.setBlock(currentPos, nextState, 3);
-			    }
-			
-			    return;
-			}
+        // 1. Guard Condition: ONLY the topmost block executes growth & visual updates
+        if (world.getBlockState(currentPos.above()).getBlock() == HavahsAdventureModBlocks.SKYROOT.get()) {
+            return;
         }
 
-        // Only run growth and visual updates from the TOP block and if there is no fruit on
-        if (world.getBlockState(currentPos.above()).getBlock() == HavahsAdventureModBlocks.SKYROOT.get() && hasFruit)
-            return;
-		
-        // Growth Logic
-        if (currentY < rootY + maxHeight - 1) {
+        // 2. Locate true base block
+        BlockPos rootPos = getRootPosition(world, currentPos);
+        if (rootPos == null) {
+            return; // Abort if floating without valid soil below
+        }
+
+        int rootY = rootPos.getY();
+        int currentY = currentPos.getY();
+
+        // Fetch / initialize root data
+        BlockEntity rootBE = world.getBlockEntity(rootPos);
+        if (rootBE != null) {
+            initializeRootNBT(world, rootBE);
+        }
+
+        int maxHeight = 11;
+        int seed = rootBE != null ? getBlockNBTInt(rootBE, "growthSeed") : 0;
+        boolean hasFruit = rootBE != null && getBlockNBTBoolean(rootBE, "hasFruit");
+        int currentHeight = currentY - rootY + 1;
+
+        // 3. Fruit Conversion (Triggers once full height is reached)
+        if (currentHeight >= maxHeight && !hasFruit) {
+            if (rootBE != null) {
+                CompoundTag data = rootBE.getPersistentData();
+                data.putBoolean("hasFruit", true);
+                rootBE.setChanged();
+            }
+            hasFruit = true; // Update local flag so the visual pass below applies it immediately
+        }
+
+        // 4. Growth Logic
+        if (currentHeight < maxHeight) {
             BlockPos abovePos = currentPos.above();
 
-            // Check BOTH:
-            // 1. Top space is empty
-            // 2. Future wide turn parts have enough room
-            if (world.isEmptyBlock(abovePos)
-                    && canGrow(world, currentPos, rootY, currentY)) {
-
+            if (world.isEmptyBlock(abovePos) && canGrow(world, currentPos, rootY, currentY)) {
                 world.setBlock(
                     abovePos,
                     HavahsAdventureModBlocks.SKYROOT.get().defaultBlockState(),
                     3
                 );
-
-                transferNBT(world, currentPos, abovePos);
-
+                
+                // Update top height marker so the visual pass includes the newly placed top block
                 currentY++;
-            } 
-            else
-                return;
-	    }
+            }
+        }
 
-        // Visual Pass
+        // 5. Visual Pass (Runs EVERY tick, recalculating parts dynamically)
         MutableBlockPos scanPos = new MutableBlockPos(currentPos.getX(), currentY, currentPos.getZ());
 
         for (int yLevel = currentY; yLevel >= rootY; yLevel--) {
-
             scanPos.set(currentPos.getX(), yLevel, currentPos.getZ());
-
             BlockState scanState = world.getBlockState(scanPos);
 
             if (scanState.getBlock() == HavahsAdventureModBlocks.SKYROOT.get()) {
-				updateBlockVisual(world, scanPos, scanState, currentY, seed);
+                updateBlockVisual(world, scanPos, scanState, currentY, seed, hasFruit);
             }
         }
     }
 
-    /**
-     * Prevent growth if any future wide turn block would collide.
-     */
+    private static BlockPos getRootPosition(LevelAccessor world, BlockPos pos) {
+        BlockPos.MutableBlockPos scanPos = pos.mutable();
+
+        while (world.getBlockState(scanPos.below()).getBlock() == HavahsAdventureModBlocks.SKYROOT.get()) {
+            scanPos.move(Direction.DOWN);
+        }
+
+        BlockState groundState = world.getBlockState(scanPos.below());
+        if (groundState.isAir()) {
+            return null;
+        }
+
+        return scanPos.immutable();
+    }
+
+    private static void initializeRootNBT(LevelAccessor world, BlockEntity rootBE) {
+        CompoundTag data = rootBE.getPersistentData();
+        if (!data.getBoolean("seedSet")) {
+            data.putInt("growthSeed", world.getRandom().nextInt(2_000_000));
+            data.putBoolean("hasFruit", false);
+            data.putBoolean("seedSet", true);
+            rootBE.setChanged();
+        }
+    }
+
     private static boolean canGrow(
         LevelAccessor world,
         BlockPos topPos,
         int rootY,
         int currentTopY
     ) {
-
-        // Simulate one block of future growth
         int projectedTopY = currentTopY + 1;
 
         for (int yLevel = rootY; yLevel <= projectedTopY; yLevel++) {
-
             int futureIndex = projectedTopY - yLevel;
-
             String futurePart = getPartForIndex(futureIndex);
 
-            // Only turn segments need extra space
             if (isWidePart(futurePart)) {
+                BlockPos checkPos = new BlockPos(topPos.getX(), yLevel, topPos.getZ());
 
-                BlockPos checkPos =
-                    new BlockPos(topPos.getX(), yLevel, topPos.getZ());
-
-                // Check only the 4 horizontal neighbors
                 for (Direction dir : new Direction[] {
-                        Direction.NORTH,
-                        Direction.SOUTH,
-                        Direction.EAST,
-                        Direction.WEST
+                        Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST
                 }) {
-
                     BlockPos sidePos = checkPos.relative(dir);
-
-                    // Ignore other skyroot blocks
                     BlockState sideState = world.getBlockState(sidePos);
 
-                    if (!world.isEmptyBlock(sidePos)
-                            && sideState.getBlock() != HavahsAdventureModBlocks.SKYROOT.get()) {
+                    if (!world.isEmptyBlock(sidePos) && sideState.getBlock() != HavahsAdventureModBlocks.SKYROOT.get()) {
                         return false;
                     }
                 }
@@ -187,25 +173,21 @@ public class SkyrootOnTickUpdateProcedure extends net.mcreator.havahsadventure.U
         BlockPos pos,
         BlockState state,
         int topY,
-        int seed
+        int seed,
+        boolean hasFruit
     ) {
-
         if (PARTS_PROPERTY == null || !state.hasProperty(PARTS_PROPERTY)) {
             return;
         }
 
-        // Distance from top
         int index = topY - pos.getY();
-        
-		BlockEntity be = world.getBlockEntity(pos);
-		
         String targetPart = getPartForIndex(index);
 
-		if (index == 10 && getBlockNBTBoolean(be, "hasFruit")) {
-		    targetPart = "stem_with_fruit";
-		}
+        // Convert the base block (stem_6) into stem_with_fruit when fruit is active
+        if (index == 10 && hasFruit) {
+            targetPart = "stem_with_fruit";
+        }
 
-        // Tiered hashing
         int hash0 = seed;
         int hash1 = (seed * 31) ^ (seed >> 5);
         int hash2 = (seed * 17) ^ (seed >> 3);
@@ -215,7 +197,6 @@ public class SkyrootOnTickUpdateProcedure extends net.mcreator.havahsadventure.U
         Rotation rot2 = Rotation.values()[Math.abs(hash2) % 4];
 
         Rotation finalRot;
-
         if (index <= 1) {
             finalRot = rot0;
         } else if (index <= 5) {
@@ -225,26 +206,20 @@ public class SkyrootOnTickUpdateProcedure extends net.mcreator.havahsadventure.U
         }
 
         BlockState nextState = state;
-
         var partValue = PARTS_PROPERTY.getValue(targetPart);
 
         if (partValue.isPresent()) {
-
-            nextState =
-                nextState.setValue(
-                    (EnumProperty) PARTS_PROPERTY,
-                    (Enum) partValue.get()
-                );
+            nextState = nextState.setValue(
+                (EnumProperty) PARTS_PROPERTY,
+                (Enum) partValue.get()
+            );
 
             if (nextState.hasProperty(BlockStateProperties.HORIZONTAL_FACING)) {
-
                 Direction dir = finalRot.rotate(Direction.NORTH);
-
-                nextState =
-                    nextState.setValue(
-                        BlockStateProperties.HORIZONTAL_FACING,
-                        dir
-                    );
+                nextState = nextState.setValue(
+                    BlockStateProperties.HORIZONTAL_FACING,
+                    dir
+                );
             }
         }
 
@@ -252,50 +227,4 @@ public class SkyrootOnTickUpdateProcedure extends net.mcreator.havahsadventure.U
             world.setBlock(pos, nextState, 3);
         }
     }
-
-    private static void initializeNBT(
-        BlockEntity be,
-        int y
-    ) {
-        if (be != null && !be.getPersistentData().getBoolean("rootYSet")) {
-
-            CompoundTag data = be.getPersistentData();
-
-            data.putInt("rootY", y);
-            data.putInt("maxHeight", 11);
-            data.putBoolean("hasFruit", false);
-
-            // Large seed range for better variation
-            data.putInt(
-                "growthSeed",
-                new Random().nextInt(2_000_000)
-            );
-
-            data.putBoolean("rootYSet", true);
-
-            be.setChanged();
-        }
-    }
-
-    private static void transferNBT(
-    LevelAccessor world,
-    BlockPos source,
-    BlockPos target
-) {
-    BlockEntity sourceBE = world.getBlockEntity(source);
-    BlockEntity targetBE = world.getBlockEntity(target);
-
-    if (sourceBE != null && targetBE != null) {
-        CompoundTag src = sourceBE.getPersistentData();
-        CompoundTag dst = targetBE.getPersistentData();
-
-        dst.putInt("rootY", src.getInt("rootY"));
-        dst.putInt("maxHeight", src.getInt("maxHeight"));
-        dst.putInt("growthSeed", src.getInt("growthSeed"));
-        dst.putBoolean("hasFruit", src.getBoolean("hasFruit"));
-        dst.putBoolean("rootYSet", true);
-
-        targetBE.setChanged();
-    }
-}
 }
