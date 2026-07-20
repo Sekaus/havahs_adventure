@@ -5,10 +5,6 @@ package net.mcreator.havahsadventure.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -43,19 +39,6 @@ public class HavahsAdventureModBlocks {
 		SKYROOT = REGISTRY.register("skyroot", SkyrootBlock::new);
 		LIGHT_SPIRAL = REGISTRY.register("light_spiral", LightSpiralBlock::new);
 	}
-
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
-	@EventBusSubscriber(Dist.CLIENT)
-	public static class BlocksClientSideHandler {
-		@SubscribeEvent
-		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-			LightSpiralBlock.blockColorLoad(event);
-		}
-
-		@SubscribeEvent
-		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
-			LightSpiralBlock.itemColorLoad(event);
-		}
-	}
 }
