@@ -1692,6 +1692,9 @@
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:Skyroot"
+    ],
+    "ITEMS:minecraft:small_flowers": [
+      "CUSTOM:LightSpiral"
     ]
   },
   "tab_element_order": {},
