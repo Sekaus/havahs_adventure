@@ -2,12 +2,12 @@
   "_fv": 85,
   "_type": "plant",
   "definition": {
-    "renderType": 120,
+    "renderType": 12,
     "texture": "light_spiral",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "Grass",
+    "tintType": "No tint",
     "isItemTinted": true,
     "plantType": "normal",
     "suspiciousStewEffect": "STRENGTH",
@@ -97,7 +97,7 @@
       "value": ""
     },
     "offsetType": "XZ",
-    "aiPathNodeType": "DEFAULT",
+    "aiPathNodeType": "LAVA",
     "strippingResult": {
       "value": ""
     },
