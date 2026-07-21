@@ -37,6 +37,7 @@ public class HavahsAdventureModItems {
 	public static final DeferredItem<Item> SKYROOT;
 	public static final DeferredItem<Item> SKYROOT_FRUIT;
 	public static final DeferredItem<Item> LIGHT_SPIRAL;
+	public static final DeferredItem<Item> POTTED_LIGHT_SPIRAL;
 	static {
 		ABOVE_BLOCK = block(HavahsAdventureModBlocks.ABOVE_BLOCK, new Item.Properties().fireResistant());
 		FINEL_KEY = REGISTRY.register("finel_key", FinelKeyItem::new);
@@ -58,6 +59,7 @@ public class HavahsAdventureModItems {
 		SKYROOT = block(HavahsAdventureModBlocks.SKYROOT);
 		SKYROOT_FRUIT = REGISTRY.register("skyroot_fruit", SkyrootFruitItem::new);
 		LIGHT_SPIRAL = block(HavahsAdventureModBlocks.LIGHT_SPIRAL, new Item.Properties().fireResistant());
+		POTTED_LIGHT_SPIRAL = block(HavahsAdventureModBlocks.POTTED_LIGHT_SPIRAL);
 	}
 
 	// Start of user code block custom items

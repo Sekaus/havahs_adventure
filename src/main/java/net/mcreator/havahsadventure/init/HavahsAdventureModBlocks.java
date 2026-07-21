@@ -25,6 +25,7 @@ public class HavahsAdventureModBlocks {
 	public static final DeferredBlock<Block> ABOVE_DIRT;
 	public static final DeferredBlock<Block> SKYROOT;
 	public static final DeferredBlock<Block> LIGHT_SPIRAL;
+	public static final DeferredBlock<Block> POTTED_LIGHT_SPIRAL;
 	static {
 		ABOVE_BLOCK = REGISTRY.register("above_block", AboveBlockBlock::new);
 		ABOVE_BRICK_BLOCK = REGISTRY.register("above_brick_block", AboveBrickBlockBlock::new);
@@ -38,6 +39,7 @@ public class HavahsAdventureModBlocks {
 		ABOVE_DIRT = REGISTRY.register("above_dirt", AboveDirtBlock::new);
 		SKYROOT = REGISTRY.register("skyroot", SkyrootBlock::new);
 		LIGHT_SPIRAL = REGISTRY.register("light_spiral", LightSpiralBlock::new);
+		POTTED_LIGHT_SPIRAL = REGISTRY.register("potted_light_spiral", PottedLightSpiralBlock::new);
 	}
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

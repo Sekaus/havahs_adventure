@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "3": "light_spiral",
+        "4": "above_dirt",
+        "flowerpot": "minecraft:flower_pot"
+      }
+    }
+  }
+}

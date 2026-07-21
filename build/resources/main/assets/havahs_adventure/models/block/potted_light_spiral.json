@@ -1,0 +1,11 @@
+{
+  "parent": "havahs_adventure:custom/potted_light_spiral",
+  "textures": {
+    "all": "havahs_adventure:block/light_spiral",
+    "particle": "havahs_adventure:block/light_spiral",
+    "3": "havahs_adventure:block/light_spiral",
+    "4": "havahs_adventure:block/above_dirt",
+    "flowerpot": "minecraft:block/flower_pot"
+  },
+  "render_type": "cutout"
+}

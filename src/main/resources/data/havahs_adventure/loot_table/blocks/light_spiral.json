@@ -1,20 +1,4 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "havahs_adventure:blocks/light_spiral",
-  "pools": [
-    {
-      "rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "havahs_adventure:light_spiral"
-        }
-      ]
-    }
-  ]
+  "random_sequence": "havahs_adventure:blocks/light_spiral"
 }

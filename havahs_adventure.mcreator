@@ -1677,6 +1677,132 @@
         ]
       },
       "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "PottedLightSpiral",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potted_light_spiral",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/havahs_adventure/models/block/potted_light_spiral.json",
+          "src/main/java/net/mcreator/havahsadventure/block/PottedLightSpiralBlock.java",
+          "src/main/resources/assets/havahs_adventure/blockstates/potted_light_spiral.json",
+          "src/main/resources/assets/havahs_adventure/models/item/potted_light_spiral.json",
+          "src/main/resources/data/havahs_adventure/loot_table/blocks/potted_light_spiral.json"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "AddPlantInPot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "add_plant_in_pot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/AddPlantInPotProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "RemovePlantInPot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "remove_plant_in_pot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/RemovePlantInPotProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "OnDestroyPlantInPot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_destroy_plant_in_pot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/havahsadventure/procedures/OnDestroyPlantInPotProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Plants"
     }
   ],
   "variable_elements": [],
@@ -1820,7 +1946,8 @@
       "block.havahs_adventure.light_spiral": "Light Spiral",
       "death.attack.light_spiral_damage": "%1$s died",
       "death.attack.light_spiral_damage.item": "%1$s was killed by %2$s using %3$s",
-      "death.attack.light_spiral_damage.player": "%1$s died whilst trying to escape %2$s"
+      "death.attack.light_spiral_damage.player": "%1$s died whilst trying to escape %2$s",
+      "block.havahs_adventure.potted_light_spiral": "Potted Light Spiral"
     }
   },
   "metadata": {
